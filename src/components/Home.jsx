@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-
-import Background from "../assets/wallpaper.png";
+import { LinkContainer } from "react-router-bootstrap";
 
 const ORANGE = "#ea962c";
 const YELLOW = "#ead32c";
@@ -18,6 +17,8 @@ const Home = (props) => {
             font-size: 20pt;
             font-weight: 500;
             width: 10.5em;
+            margin-right: 5px;
+            margin-top: 10px;
           }
           
           .btn-custom:hover {
@@ -26,15 +27,10 @@ const Home = (props) => {
           }
           `}
       </style>
-      <Container
-        fluid
+      <Container 
         style={{
           height: "100%",
           maxHeight: "100%",
-          backgroundImage: `url(${Background})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
         }}
         {...props}
       >
@@ -70,15 +66,12 @@ const Home = (props) => {
         </Row>
         <Row style={{ height: "50%", marginTop: "10px" }}>
           <Col sm={12} style={{ textAlign: "center" }}>
-            <Button
-              variant="custom"
-              style={{ marginRight: "5px", marginTop: "5px" }}
-            >
-              View my projects
-            </Button>
-            <Button variant="custom" style={{ marginTop: "5px" }}>
-              View my resume
-            </Button>
+            <LinkContainer to="/projects">
+              <Button variant="custom">View my projects</Button>
+            </LinkContainer>
+            <LinkContainer to="/resume">
+              <Button variant="custom">View my resume</Button>
+            </LinkContainer>
           </Col>
         </Row>
       </Container>

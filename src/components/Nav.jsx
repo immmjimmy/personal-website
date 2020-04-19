@@ -3,6 +3,9 @@ import { slide as Menu } from "react-burger-menu";
 import { Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
+const ORANGE = "#ea962c";
+const WHITE = "#fffafa";
+
 const Nav = () => {
   const styles = {
     bmBurgerButton: {
@@ -13,24 +16,24 @@ const Nav = () => {
       top: "36px",
     },
     bmBurgerBars: {
-      background: "#373a47",
+      background: "#fffafa",
     },
     bmBurgerBarsHover: {
-      background: "#a90000",
+      background: WHITE,
     },
     bmCrossButton: {
       height: "24px",
       width: "24px",
     },
     bmCross: {
-      background: "#bdc3c7",
+      background: WHITE,
     },
     bmMenuWrap: {
       position: "fixed",
       height: "100%",
     },
     bmMenu: {
-      background: "#373a47",
+      background: "#4d4e4f",
       padding: "2.5em 1.5em 0",
       fontSize: "1.15em",
     },
@@ -42,12 +45,9 @@ const Nav = () => {
       padding: "0.8em",
     },
     bmItem: {
-      // display: "inline-block",
       outline: "none",
       textDecoration: "none",
       marginBottom: "10px",
-      // color: "#d1d1d1",
-      // transition: "color 0.2s",
     },
     bmOverlay: {
       background: "rgba(0, 0, 0, 0.3)",
@@ -55,11 +55,43 @@ const Nav = () => {
   };
 
   return (
-    <Menu styles={styles}>
-      <LinkContainer to="/">
-        <Button variant="outline-secondary" style={{ outline: "none" }}>Home</Button>
-      </LinkContainer>
-    </Menu>
+    <>
+      <style type="text/css">
+        {`.btn-nav-custom {
+            border: 2px solid;
+            background-color: transparent;
+            border-color: ${ORANGE};
+            color: ${ORANGE};
+            font-size: 15pt;
+            font-weight: 500;
+            width: 10.5em;
+            margin: 0 0;
+          }
+          
+          .btn-nav-custom:hover {
+            background-color: ${ORANGE};
+            color: white;
+          }
+          `}
+      </style>
+      <Menu styles={styles}>
+        <LinkContainer to="/">
+          <Button variant="nav-custom" style={{ outline: "none" }}>
+            Home
+          </Button>
+        </LinkContainer>
+        <LinkContainer to="/projects">
+          <Button variant="nav-custom" style={{ outline: "none" }}>
+            Personal Projects
+          </Button>
+        </LinkContainer>
+        <LinkContainer to="/work">
+          <Button variant="nav-custom" style={{ outline: "none" }}>
+            Work Experience
+          </Button>
+        </LinkContainer>
+      </Menu>
+    </>
   );
 };
 
