@@ -58,9 +58,11 @@ const Home = (props) => {
                   }}
                 >
                   I am a third year majoring in Computer Science at UC San
-                  Diego. At heart, I am a software engineer looking to develop
-                  projects that will empower the community. I am an incoming
-                  software engineer intern at Google for Summer 2020.
+                  Diego. I have experience working on fullstack projects in
+                  Java, JavaScript, and TypeScript. At heart, I am a software
+                  engineer looking to develop projects that will empower the
+                  community. I am an incoming software engineer intern at Google
+                  for Summer 2020.
                 </p>
               </Col>
               <Col xs={3} />
