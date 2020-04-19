@@ -12,7 +12,7 @@ const Nav = () => {
       position: "fixed",
       width: "36px",
       height: "30px",
-      left: "36px",
+      left: "18px",
       top: "36px",
     },
     bmBurgerBars: {
