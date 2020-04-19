@@ -46,7 +46,7 @@ const Home = (props) => {
             <h1 style={{ color: ORANGE }}>hi! i'm jimmy</h1>
             <Row style={{ marginTop: "10px", maxHeight: "100%" }}>
               <Col xs={3} />
-              <Col sm>
+              <Col xs>
                 <p
                   style={{
                     color: YELLOW,
