@@ -1,6 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { FaGithub, FaDev, FaLinkedin } from "react-icons/fa";
+
+import resume from "../assets/resume.pdf";
 
 const ORANGE = "#ea962c";
 const YELLOW = "#ead32c";
@@ -27,7 +30,7 @@ const Home = (props) => {
           }
           `}
       </style>
-      <Container 
+      <Container
         style={{
           height: "100%",
           maxHeight: "100%",
@@ -69,9 +72,32 @@ const Home = (props) => {
             <LinkContainer to="/projects">
               <Button variant="custom">View my projects</Button>
             </LinkContainer>
-            <LinkContainer to="/resume">
+            <a href={resume}>
               <Button variant="custom">View my resume</Button>
-            </LinkContainer>
+            </a>
+            <div style={{ paddingTop: "30px" }}>
+              <a
+                href="https://www.github.com/immmjimmy"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                target="_blank"
+              >
+                <FaGithub size="3em" style={{ marginRight: "20px" }} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jimmydang1"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                target="_blank"
+              >
+                <FaLinkedin size="3em" style={{ marginRight: "20px" }} />
+              </a>
+              <a
+                href="https://devpost.com/sleepyjimmy"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                target="_blank"
+              >
+                <FaDev size="3em" style={{ marginRight: "20px" }} />
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>
