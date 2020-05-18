@@ -82,6 +82,7 @@ const Home = (props) => {
                 href="https://www.github.com/immmjimmy"
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub size="3em" style={{ marginRight: "20px" }} />
               </a>
@@ -89,6 +90,7 @@ const Home = (props) => {
                 href="https://www.linkedin.com/in/jimmydang1"
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin size="3em" style={{ marginRight: "20px" }} />
               </a>
@@ -96,6 +98,7 @@ const Home = (props) => {
                 href="https://devpost.com/sleepyjimmy"
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaDev size="3em" style={{ marginRight: "20px" }} />
               </a>
