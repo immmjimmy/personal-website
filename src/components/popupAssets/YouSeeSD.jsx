@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 import Persona_Samuel from "../../assets/YouSeeSD/persona_samuel.png";
-import Persona_Chloe from "../../assets/YouSeeSD/persona_chloe.png";
+import Persona_Lisa from "../../assets/YouSeeSD/persona_lisa.png";
 
 import Create_Tour from "../../assets/YouSeeSD/CreateTour.png";
 import Database_Schema from "../../assets/YouSeeSD/DatabaseSchema.png";
@@ -95,12 +95,12 @@ const YouSeeSD = () => {
             </Col>
             <Col sm style={{ textAlign: "center" }}>
               <img
-                src={Persona_Chloe}
+                src={Persona_Lisa}
                 style={PERSONA_STYLE}
-                alt="Persona: Chloe"
+                alt="Persona: Lisa"
               />
               <p style={{ textAlign: "left" }}>
-                Chloe is an incoming first year student and is unfamiliar with
+                Lisa is an incoming first year student and is unfamiliar with
                 the campus. Her friends are too busy to tour the campus with
                 her. She needs a way to learn where the various hotspots and
                 classrooms are located so she can get around quickly and easily.

@@ -6,7 +6,7 @@ import { LinkContainer } from "react-router-bootstrap";
 const ORANGE = "#ea962c";
 const WHITE = "#fffafa";
 
-const Nav = () => {
+const Nav = (props) => {
   const styles = {
     bmBurgerButton: {
       position: "fixed",
@@ -74,19 +74,19 @@ const Nav = () => {
           }
           `}
       </style>
-      <Menu styles={styles}>
+      <Menu styles={styles} isOpen={props.menuOpen} onStateChange={(state) => props.stateHandler(state)}>
         <LinkContainer to="/">
-          <Button variant="nav-custom" style={{ outline: "none" }}>
+          <Button variant="nav-custom" style={{ outline: "none" }} onClick={() => props.closeMenu()}>
             Home
           </Button>
         </LinkContainer>
         <LinkContainer to="/projects">
-          <Button variant="nav-custom" style={{ outline: "none" }}>
+          <Button variant="nav-custom" style={{ outline: "none" }} onClick={() => props.closeMenu()}>
             Personal Projects
           </Button>
         </LinkContainer>
         <LinkContainer to="/work">
-          <Button variant="nav-custom" style={{ outline: "none" }}>
+          <Button variant="nav-custom" style={{ outline: "none" }} onClick={() => props.closeMenu()}>
             Work Experience
           </Button>
         </LinkContainer>

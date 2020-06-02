@@ -31,6 +31,7 @@ const Projects = () => {
 
   const PREVIEW_STYLE = {
     maxWidth: "100%",
+    // maxHeight
   };
 
   const WHITE_TEXT = {
