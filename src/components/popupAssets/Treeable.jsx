@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+import Persona_Mark from "../../assets/Treeable/persona_mark.png";
+import Persona_Rachel from "../../assets/Treeable/persona_rachel.png";
+
 import Storyboard_1 from "../../assets/Treeable/storyboard1.png";
 import Storyboard_2 from "../../assets/Treeable/storyboard2.png";
 
@@ -33,15 +36,27 @@ const STORYBOARD_STYLE = {
   maxWidth: "100%",
   height: "auto",
   marginBottom: "10px",
+  boxShadow: "0 7px 7px rgba(59, 43, 91, 0.7)",
+};
+
+const PERSONA_STYLE = {
+  ...STORYBOARD_STYLE,
+  borderRadius: "50%",
+  maxWidth: "50%",
 };
 
 const PROTOTYPE_STYLE = {
   maxWidth: "100%",
   height: "auto",
+  boxShadow: "0 7px 7px rgba(59, 43, 91, 0.7)",
 };
 
 const ROW_STYLE = {
   paddingBottom: "1rem",
+};
+
+const SECTION_STYLE = {
+  paddingTop: "1.5rem",
 };
 
 const Treeable = () => {
@@ -70,7 +85,7 @@ const Treeable = () => {
           decisions.
         </p>
       </section>
-      <section>
+      <section style={SECTION_STYLE}>
         <h4>Problem Statement</h4>
         <p>
           The majority of college students want to be more sustainable and
@@ -79,7 +94,7 @@ const Treeable = () => {
           habits.
         </p>
       </section>
-      <section>
+      <section style={SECTION_STYLE}>
         <h4>User Research</h4>
         <p>
           For our user research, we observed and interviewed a number of college
@@ -101,7 +116,43 @@ const Treeable = () => {
           cause.
         </p>
       </section>
-      <section>
+      <section style={SECTION_STYLE}>
+        <h4>User Personas</h4>
+        <Container fluid>
+          <Row>
+            <Col sm style={{ textAlign: "center" }}>
+              <img
+                src={Persona_Mark}
+                style={PERSONA_STYLE}
+                alt="Persona: Mark"
+              />
+              <p style={{ textAlign: "left" }}>
+                Mark is a college student that would like to be environmentally
+                conscious but doesn't know how to get started. He has tried
+                asking his friends but they aren't of any help as they were
+                never taught proper sustainable practices. Mark needs a way to
+                connect with more involved members of the sustainable community
+                to become familiar with the best eco-friendly practices.
+              </p>
+            </Col>
+            <Col sm style={{ textAlign: "center" }}>
+              <img
+                src={Persona_Rachel}
+                style={PERSONA_STYLE}
+                alt="Persona: Rachel"
+              />
+              <p style={{ textAlign: "left" }}>
+                Rachel is a high school student who is the president of her high
+                school's environmental science club. Her general members tend to
+                drop out from the club about a quarter of the way through the
+                school year. Rachel needs a way to keep them motivated and
+                incentivized to stay dedicated to the cause they signed up for.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section style={SECTION_STYLE}>
         <h4>Storyboards</h4>
         <p>
           Based on the findings of our user research, we came up with two
@@ -149,7 +200,7 @@ const Treeable = () => {
           </Row>
         </Container>
       </section>
-      <section>
+      <section style={SECTION_STYLE}>
         <h4>Low-Fidelity Prototypes</h4>
         <p>
           Based on our storyboards' approaches, we came up with the following
@@ -266,7 +317,7 @@ const Treeable = () => {
           their progress in the recycling leaderboards.
         </p>
       </section>
-      <section>
+      <section style={SECTION_STYLE}>
         <h4>Mid-Fidelity Prototypes</h4>
         <p>
           These were our initial wireframes for the webapp. We decided on the
@@ -316,7 +367,7 @@ const Treeable = () => {
           </Row>
         </Container>
       </section>
-      <section>
+      <section style={SECTION_STYLE}>
         <h4>User Testing</h4>
         <p>
           We performed some user testing on early-mid stage implementations of
@@ -345,15 +396,18 @@ const Treeable = () => {
           implement it in future version of our application.
         </p>
       </section>
-      <section>
-        <h4>Final Remarks and Designs</h4>
+      <section style={SECTION_STYLE}>
+        <h4>Final Remarks and Sample Screens</h4>
         <p>
-          Ultimately, we were able to fully implement the app to our liking.
-          Although it deviated little more than we would've liked from the
-          prototypes, the main ideas from testing remained. We presented the
-          application to numerous people, varying from professors to industry
-          professionals. For our first web project, we're pretty proud of the
-          results!
+          Ultimately, we were able to fully implement the app to our liking. I
+          learned that implementing a responsive mobile web app is hard. The
+          approach we followed in the class wasn't the best but it still
+          provided the basics of responsive web development that I still refer
+          to occasionally. Although it deviated little more than we would've
+          liked from the prototypes, the main ideas from testing remained. We
+          presented the application to numerous people, varying from professors
+          to industry professionals. For our first web project, we're pretty
+          proud of the results!
         </p>
         <Container>
           <Row>
@@ -363,6 +417,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design About 1"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Splash Page</i>
+              </p>
             </Col>
             <Col sm style={ROW_STYLE}>
               <img
@@ -370,6 +427,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design About 2"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>About Section</i>
+              </p>
             </Col>
             <Col sm style={ROW_STYLE}>
               <img
@@ -377,6 +437,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Home 1"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>User Home Page</i>
+              </p>
             </Col>
           </Row>
           <Row>
@@ -386,6 +449,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Home 2"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Upload Picture Screen</i>
+              </p>
             </Col>
             <Col sm style={ROW_STYLE}>
               <img
@@ -393,6 +459,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Leaderboard"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Leaderboard Page</i>
+              </p>
             </Col>
             <Col sm style={ROW_STYLE}>
               <img
@@ -400,6 +469,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Gallery"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Gallery Page</i>
+              </p>
             </Col>
           </Row>
           <Row>
@@ -409,6 +481,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Discussion"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Discussion Page</i>
+              </p>
             </Col>
             <Col sm style={ROW_STYLE}>
               <img
@@ -416,6 +491,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Profile"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Profile Page</i>
+              </p>
             </Col>
             <Col sm style={ROW_STYLE}>
               <img
@@ -423,6 +501,9 @@ const Treeable = () => {
                 style={PROTOTYPE_STYLE}
                 alt="Final Design Help"
               />
+              <p style={{ textAlign: "center", marginTop: "10px" }}>
+                <i>Help Page</i>
+              </p>
             </Col>
           </Row>
         </Container>

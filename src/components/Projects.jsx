@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AuxiliumPreview from "../assets/auxilium.png";
 import InYourViewPreview from "../assets/inyourview.png";
-import YouSeeSDPreview from "../assets/youseesd.png";
+import YouSeeSDPreview from "../assets/YouSeeSD/youseesd.png";
 import TreeablePreview from "../assets/Treeable/treeable.png";
 
 import Popup from "./Popup";

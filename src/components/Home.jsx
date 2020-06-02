@@ -74,7 +74,7 @@ const Home = (props) => {
             <LinkContainer to="/projects">
               <Button variant="custom">View my projects</Button>
             </LinkContainer>
-            <a href={resume}>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <Button variant="custom">View my resume</Button>
             </a>
             <div style={{ paddingTop: "30px" }}>
