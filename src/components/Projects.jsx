@@ -27,11 +27,13 @@ const Projects = () => {
     marginRight: "5px",
     paddingTop: "5px",
     paddingBottom: "15px",
+    textAlign: "center",
   };
 
   const PREVIEW_STYLE = {
     maxWidth: "100%",
-    // maxHeight
+    maxHeight: "290px",
+    paddingBottom: "10px"
   };
 
   const WHITE_TEXT = {
@@ -40,6 +42,11 @@ const Projects = () => {
 
   const CARD_TEXT_PADDING = {
     paddingTop: "5px",
+  };
+
+  const SUMMARY_TEXT = {
+    ...WHITE_TEXT,
+    textAlign: "left",
   };
 
   return (
@@ -65,9 +72,13 @@ const Projects = () => {
             style={COL_STYLE}
             onClick={() => handleProjectClick("Auxilium")}
           >
-            <h3 style={{...WHITE_TEXT, ...CARD_TEXT_PADDING}}>Auxilium</h3>
-            <img src={AuxiliumPreview} style={PREVIEW_STYLE} alt="Auxilium Preview" />
-            <p style={WHITE_TEXT}>
+            <h3 style={{ ...WHITE_TEXT, ...CARD_TEXT_PADDING }}>Auxilium</h3>
+            <img
+              src={AuxiliumPreview}
+              style={PREVIEW_STYLE}
+              alt="Auxilium Preview"
+            />
+            <p style={SUMMARY_TEXT}>
               Our web-app connects homeless people with food, hygiene, and
               shelter resources that they may not have access to. By texting a
               number available on our website, they are prompted with a series
@@ -87,9 +98,13 @@ const Projects = () => {
             style={COL_STYLE}
             onClick={() => handleProjectClick("YouSeeSD")}
           >
-            <h3 style={{...WHITE_TEXT, ...CARD_TEXT_PADDING}}>YouSeeSD</h3>
-            <img src={YouSeeSDPreview} style={PREVIEW_STYLE} alt="YouSeeSD Preview" />
-            <p style={WHITE_TEXT}>
+            <h3 style={{ ...WHITE_TEXT, ...CARD_TEXT_PADDING }}>YouSeeSD</h3>
+            <img
+              src={YouSeeSDPreview}
+              style={PREVIEW_STYLE}
+              alt="YouSeeSD Preview"
+            />
+            <p style={SUMMARY_TEXT}>
               YouSeeSD will become your tour guide, leading the way to locations
               that you are interested in. The application will personally
               recommend a tour based on what you are interested in, which you
@@ -113,9 +128,13 @@ const Projects = () => {
             style={COL_STYLE}
             onClick={() => handleProjectClick("Treeable")}
           >
-            <h3 style={{...WHITE_TEXT, ...CARD_TEXT_PADDING}}>Treeable</h3>
-            <img src={TreeablePreview} style={PREVIEW_STYLE} alt="Treeable Preview" />
-            <p style={WHITE_TEXT}>
+            <h3 style={{ ...WHITE_TEXT, ...CARD_TEXT_PADDING }}>Treeable</h3>
+            <img
+              src={TreeablePreview}
+              style={PREVIEW_STYLE}
+              alt="Treeable Preview"
+            />
+            <p style={SUMMARY_TEXT}>
               Treeable is a mobile app that seeks to promote and incentivize
               recycling through its users. Within our app, we have 3 core
               features: the ability to upload a picture, see your ranking, and
@@ -129,27 +148,7 @@ const Projects = () => {
               You’ll be able to write a reply and submit it for others to see.
             </p>
           </Col>
-          <Col
-            sm
-            style={COL_STYLE}
-            onClick={() => handleProjectClick("In Your View")}
-          >
-            <h3 style={{...WHITE_TEXT, ...CARD_TEXT_PADDING}}>In Your View</h3>
-            <img src={InYourViewPreview} style={PREVIEW_STYLE} alt="In Your View Preview" />
-            <p style={WHITE_TEXT}>
-              In Your View is a website application that allows a user to easily
-              host rooms for interviews. The room will display the videos of all
-              users inside the room alongside a text editor and room for notes.
-              As one party writes code, the other is able to easily follow along
-              on their screen. Our group also wanted to really emphasize
-              continuous learning, and to do so, we implemented a feature that
-              allows users to have access to their past interviews. Once inside
-              a room, all videos are blurred so the interviewer is unable to
-              judge the candidate based off of their appearance. With these
-              features, we hoped to make it more difficult for there to be bias
-              against the job candidate.
-            </p>
-          </Col>
+          <Col sm />
         </Row>
       </Container>
       <Popup

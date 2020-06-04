@@ -269,25 +269,24 @@ const YouSeeSD = () => {
           us prioritize what should be completed by the end of any given week.
           Additionally, it was especially important for our project since our
           team consisted of 10 people - a size that most of us were not
-          acquainted with.
+          acquainted with. This helped with our team coordination, especially
+          during circumstances in which we were working on our tasks
+          individually.
         </p>
         <p>
-          Our risk matrix looked like this. For every risk, it details the
-          author of the risk, the person on the team that is accountable for
-          resolving the risk, a priority level with respect to all of the other
-          tasks that had to be completed, the risk's description, the resolution
-          status, and what we plan to do to mitigate this risk while it has not
-          been resolved.
+          This is what it looks like. For every risk, it details the author of
+          the risk, the person on the team that is accountable for resolving the
+          risk, a priority level with respect to all of the other tasks that had
+          to be completed, the risk's description, the resolution status, and
+          what we plan to do to mitigate this risk while it has not been
+          resolved.
         </p>
         <img src={Risk_Matrix} style={DIAGRAM_STYLE} alt="Risk Matrix" />
       </section>
       <section style={SECTION_STYLE}>
         <h4>Final Remarks and Sample Screens</h4>
         <p>
-          Overall, we were satisfied with the final product that we created.
-          There were some features that turned out to be more lackluster than
-          others, such as our custom navigation routing, but given the
-          constraints of the project, this was acceptable to our standards. One
+          Overall, we were satisfied with the final product that we created. One
           thing I learned is that although a lot of time was spent on
           documentation that could have been reprioritized for the
           implementation of the project, I felt that because we had clear
@@ -310,6 +309,7 @@ const YouSeeSD = () => {
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
+          style={{ maxWidth: "100%" }}
         />
         <Container style={{ marginTop: "1rem" }}>
           <Row>
